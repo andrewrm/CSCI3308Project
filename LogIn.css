@@ -1,0 +1,136 @@
+body{
+ 	 	 	/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle closest-side, #FFFFFF 0%, #7D0A1C 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle closest-side, #FFFFFF 0%, #7D0A1C 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle closest-side, #FFFFFF 0%, #7D0A1C 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 140, color-stop(0, #FFFFFF), color-stop(1, #7D0A1C));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle closest-side, #FFFFFF 0%, #7D0A1C 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle closest-side at center, #FFFFFF 0%, #7D0A1C 100%);
+}
+
+.ClassyFontClass{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}	
+
+.PageBody{
+width:1330px; height:1200px;
+}
+
+#LoginBox{
+	height:650px;
+	width:600px;
+	margin-right:375px;
+	margin-top:auto;
+	margin-bottom:auto;
+	background-color: #EAEAEA;/*#EADCB7;*/
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float:right;
+}
+
+#LoginLogo{
+
+}
+
+#LoginSearchDiv{
+	border-top: 1px solid #7D0A1C;
+}
+
+#LoginQuote{
+	margin-left: 180px;
+}
+
+#LoginSearch{
+	margin-top:100px;
+}
+
+#SearchBoxAndFriends{
+	width:400px;
+	height:200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+
+#SearchBoxWineGlass{
+	float:left;
+	width:28%;
+	height:100%;
+}
+
+#SearchBoxDiv{
+	float:right;
+	width:72%;
+	height:100%;
+}
+
+#LoginTextBox{
+	float:left;
+	border:1px solid #7D0A1C;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#LoginTextButton{
+	float:left;
+	border:1px solid #7D0A1C;
+	background-color: #7D0A11;
+	color:white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#LoginTextButton:hover{
+	float:left;
+	border:1px solid #7D0A1C;
+	background-color: white;
+	color:#7D0A1C;
+}
+
+#SearchWineImage{
+	height:50px;
+	width:25px;
+	margin-top:80px;
+	float:right;
+	margin-right:10px;
+}
+
+#LeftPanel{
+	width:200px;
+	height: 260px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color:#EAEAEA;
+	float:left;
+	margin-left:140px;
+}
+
+#LeftPanelList{
+	width:180px;
+	margin-left:auto;
+	margin-right:auto;
+	height:220px;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#LeftPanelMenu{
+	margin-top:10px;
+}
+
+.LeftPanelSubMenu li:hover{
+	background-color:#7D0A1C;
+	color:white;
+}
+
+
