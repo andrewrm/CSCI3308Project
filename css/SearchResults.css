@@ -1,0 +1,46 @@
+#ResultsTableDiv{
+	height:320px;
+	width:550px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+#ResultsTable{
+	height:200px;
+	width:550px;	
+	border:1px solid #7d0a1c;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color:#EAE8DD;
+}
+
+#ResultsTable thead{
+	height:20px;
+	width:550px;
+	color:#7d0A1c;
+	
+}
+
+#ResultsTable tbody{
+	
+}
+
+#ResultsTable td{
+	height:10px;
+	width:100%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#ResultsTable td:hover{
+	height:10px;
+	width:100%;
+	background: #7d0a1c;
+	color:white;
+}
+/*.ResutlsTableText{
+	margin-right:150px;
+	height:40px;
+	width:200px;
+}*/
