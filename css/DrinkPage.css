@@ -109,6 +109,11 @@
 	float: right;
 }
 
+#IngredientsList{
+	overflow:auto;
+	height:100px;
+}
+
 #NewDrinkRating{
 	width:100%;
 	height:10%;

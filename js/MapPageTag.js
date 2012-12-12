@@ -1,27 +1,15 @@
 $(function() {
         var availableTags = [
-            "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"
+            "Absinthe House",
+            "Walrus Saloon",
+            "Rio Grande Boulder",
+            "The Catacombs",
+            "Sundown Saloon",
+            "Pearl Street Pub",
+            "The Attic Bar and Bistro",
+            "Tahona Tequila Bistro",
+            "Press Play",
+            "Lazy Dog Sports Bar and Grill"
         ];
         $( "#tags" ).autocomplete({
             source: availableTags
