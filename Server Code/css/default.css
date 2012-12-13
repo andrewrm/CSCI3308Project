@@ -1,0 +1,457 @@
+.ClassyFontClass{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}	
+
+.PageBody{
+/*width:800px;  /*1330px*/ 
+width:99%;
+/*height:1180px; */
+background-image:url('../img/BackgroundDrink.jpg');
+background-repeat:repeat-x;
+background-position:top center;
+background-attachment:fixed;
+}
+
+#TheTop{
+	/*width:100%;*/
+	width:850px;
+	margin-left:auto;
+	margin-right:auto;
+	height:660px;
+}
+
+#LoginBox{
+	width:600px;
+	/*margin-right:375px*/
+	margin-top:auto;
+	margin-bottom: 20px;
+	background-color: #EAEAEA;/*#EADCB7; Try #E6E4DA*/  
+	border: 3px solid #3B0616;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float:right;
+}
+
+#LoginLogo{
+
+}
+
+#SiteLogo{
+	width:518px;
+	height:212px;
+	margin-left:10px;
+}
+
+#LoginSearchDiv{
+	border-top: 3px solid #3B0616;
+}
+
+#LoginQuote{
+	margin-left: 180px;
+}
+
+#LoginSearch{
+	margin-top:100px;
+}
+
+#SearchBoxAndFriends{
+	width:400px;
+	height:200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	background-color:#EAEAEA;/*#E6E4DA;*/
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#SearchBoxWineGlass{
+	float:left;
+	width:28%;
+	height:100%;
+}
+
+#SearchBoxDiv{
+	float:right;
+	width:72%;
+	height:100%;
+}
+
+#LoginTextBox{
+	float:left;
+	border:1px solid #7D0A1C;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#LoginTextButton{
+	float:left;
+	border:1px solid #7D0A1C;
+	background-color: #7D0A11;
+	color:white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#LoginTextButton:hover{
+	float:left;
+	border:1px solid #7D0A1C;
+	background-color: white;
+	color:#7D0A1C;
+}
+
+#SearchWineImage{
+	height:50px;
+	width:25px;
+	margin-top:80px;
+	float:right;
+	margin-right:10px;
+}
+
+#LeftPanel{
+	width:200px;
+	height: 180px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color:#3B0616;/*#46541F;*/
+	float:left;
+	/*margin-left:140px;*/
+}
+
+#LeftPanelList{
+	width:180px;
+	margin-left:auto;
+	margin-right:auto;
+	height:220px;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#LeftPanelMenu{
+	margin-top:10px;
+}
+
+.LeftPanelSubMenu li{
+	width:80px;
+}
+
+.liText{
+	margin-left:10px;
+}
+
+.LeftPanelSubMenu li:hover{
+	background-color:#7D0A1C;
+	color:white;
+}
+
+#Footer{
+	color:#E6E4DA;/*#97969B;*/
+	width:300px;
+	height:30px;
+	margin-left: 400px;
+}
+
+#DrinkInformation{
+	width:590px;
+	overflow: auto;
+	margin: 10px auto 20px;
+	border:2px solid #3B0616;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#DrinkInformationLeftColumn{
+	display: inline-block;
+	width:25%;
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+#DrinkInformationRightColumn{
+	display: inline-block;
+	width:73%;
+	vertical-align: top;
+}
+
+#DrinkInformationPhoto{
+	height:180px;
+	width:140px;
+	border:2px solid #3B0616;
+	margin-left:5px;
+	margin-top:5px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#DrinkButtonRow{
+	
+}
+
+#DrinkLocationsButton1{
+	background-color:#7D0A1C;
+	border:1px solid white;
+	height:30px;
+	color:white;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 0px 10px;
+	float:left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#DrinkLocationsButton1:hover{
+	background-color: white;
+	color:#7D0A1C;
+	border:1px solid #7D0A1C;
+}
+
+#DrinkLocationsButton2{
+	background-color:#7D0A1C;
+	border:1px solid white;
+	height:30px;
+	color:white;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin:2px;
+	padding: 0px 10px;
+	float:left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#DrinkLocationsButton2:hover{
+	background-color:white;
+	color:#7D0A1C;
+	border:1px solid #7D0A1C;
+}
+
+.DrinkTitle{
+	color:#7D0A1C;
+}
+
+#DrinkInformationTop{
+	width:100%;
+	border-bottom:2px solid #3B0616;
+}
+
+#DrinkInformationBottom{
+	width:100%;
+}
+
+#DrinkInformationRightColumnL1{
+	display: inline-block;
+	width: 76%;
+	vertical-align: top;
+}
+
+#DrinkInformationRightColumnR1{
+	display: inline-block;
+	width:22%;
+	vertical-align: top;
+}
+
+#IngredientsList{
+}
+
+#NewDrinkRating{
+	width:100%;
+	margin-top:22px;
+}
+
+#NewDrinkRatingStars{
+	margin-top:5px;
+}
+
+#NewDrinkRatingText{
+	width:60%;
+	height:100%;
+	float:right;
+	color: #7D0A1C;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:small;
+}
+
+#AverageDrinkRating{
+	width:100%;
+	height:10%;
+}
+
+.star-rating,
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus,
+.star-rating .current-rating{
+background: url('../img/star.gif') left -1000px repeat-x;
+}
+.star-rating{
+position:relative;
+width:125px;
+height:15px;
+overflow:hidden;
+list-style:none;
+margin:0;
+padding:0;
+background-position: left top;
+}
+.star-rating li{
+display: inline;
+}
+.star-rating a,
+.star-rating .current-rating{
+position:absolute;
+top:0;
+left:0;
+text-indent:-1000em;
+height:15px;
+line-height:15px;
+outline:none;
+overflow:hidden;
+border: none;
+}
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus{
+background-position: left bottom;
+}
+.star-rating a.one-star{
+width:20%;
+z-index:6;
+}
+.star-rating a.two-stars{
+width:40%;
+z-index:5;
+}
+.star-rating a.three-stars{
+width:60%;
+z-index:4;
+}
+.star-rating a.four-stars{
+width:80%;
+z-index:3;
+}
+.star-rating a.five-stars{
+width:100%;
+z-index:2;
+}
+.star-rating .current-rating{
+z-index:1;
+background-position: left center;
+}
+
+.small-star{
+width:75px;
+height:15px;
+}
+.small-star,
+.small-star a:hover,
+.small-star a:active,
+.small-star a:focus,
+.small-star .current-rating{
+background-image: url('../img/star_small.gif');
+line-height: 15px;
+height: 15px;
+}
+
+#DrinkTitle{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-left:20px;
+	/*margin-right:auto;*/
+	color:#7D0A1C;
+}
+
+#MapAndFriends{
+	height:331px;
+	width:562px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	border: solid 1px #7D0A1C;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#DrinkMap{
+	height: 330px;
+	width: 560px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+/*#DrinkTitle{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-left:auto;
+	margin-right:auto;
+	color:#7D0A1C;
+}
+
+#MapAndFriends{
+	height:331px;
+	width:562px;
+	margin-left:auto;
+	margin-right:auto;
+	border: solid 1px #7D0A1C;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#DrinkMap{
+	height: 330px;
+	width: 560px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+*/
+#tags{
+	border: solid 1px #7D0A1C;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#ResultsTableDiv{
+	height:320px;
+	width:550px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+#ResultsTable{
+	height:200px;
+	width:550px;	
+	border:1px solid #7d0a1c;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color:#EAE8DD;
+}
+
+#ResultsTable thead{
+	height:20px;
+	width:550px;
+	color:#7d0A1c;
+	
+}
+
+#ResultsTable tbody{
+	
+}
+
+#ResultsTable td{
+	height:10px;
+	width:100%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#ResultsTable td:hover{
+	height:10px;
+	width:100%;
+	background: #7d0a1c;
+	color:white;
+}
+/*.ResutlsTableText{
+	margin-right:150px;
+	height:40px;
+	width:200px;
+}*/
