@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+Add a Drink
+</title>
+	<link href="css/custom-theme/jquery-ui-1.9.1.custom.css" rel="stylesheet">
+	<link href="css/LogIn.css" rel="stylesheet" type="text/css">
+	<link href="css/AddDrinkPage.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery-ui-1.9.1.custom.js"></script>
+	<script src="js/LoginPage.js"></script>
+</head>
+<body class="PageBody">
+	<div id="TheTop">
+	<div id="LeftPanel">
+		<div id="LeftPanelList">
+			<ul id="LeftPanelMenu" class="ClassyFontClass">
+				<li>
+					<a href="#">Drink Categories</a>
+					<ul class="LeftPanelSubMenu ClassyFontClass">
+						<li><div class="liText">Beer</div>     </li>
+						<li><div class="liText">Wine</div></li>
+						<li><div class="liText">Spirits</div></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Add a Drink</a>
+				</li>
+				<li>
+					<a href="#">Write a Review</a>
+				</li>
+				<li>
+					<a href="#">Random Drink</a>
+				</li>
+				<li>
+					<a href="#">Add Bar</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="LoginBox">
+		<div id="LoginLogo">
+			<img src="img/InebLogo1.jpg" alt="Logo" id="SiteLogo"/>
+		</div>
+		<div id="LoginSearchDiv">
+		</div>
+		<i id="LoginQuote">"Four shots and seven beers ago..."</i>
+		<div id="AddDrinkArea">
+		<!--Begin Add Drink Form-->
+			<form action="/cf/add" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+			<fieldset id="AddDrinkFieldset">
+				<!--<div id="AddDrinkBanner">
+					<h3 id="AddDrinkHeader">
+						Add a Drink
+					</h3>
+				</div>-->
+				<div id="DrinkNameAndPhoto">
+				<input type="hidden" name="MAX_FILE_SIZE" value="5242880" />
+				<div id="DrinkNameAndPhotoLeft">
+				<input id="NameText" type="text" name="name" placeholder="Name" /><br />
+				</div>
+				<div id="DrinkNameAndPhotoRightCenter">
+				<div id="DrinkNameCenter">
+				<label id="CategoryLabel" for="category">Category:</label><select name="category" id="category">
+					<option value="1">Cocktail</option>
+					<option value="2">Spirit</option>
+				</select><br />
+				</div>
+				<div id="DrinkNameRight">
+				<!-- <img src="./img/cocktails/_404.jpg" alt="Unknown" /><br />   -->
+				<input type="file" name="picture" id="picture" value="" />
+				</div>
+				</div>
+				</div><!-- DrinkNameAndPhoto -->
+				<h4 id="Ingradientsh4">Ingredients:</h4>
+				<ul id="ingredients-list">
+					<li>
+						<input type="text" name="quantities[]" size="2" />
+						<select id="MeasureSelect" name="measures[]">
+							<option value="1">cup</option>
+							<option value="2">tbsp</option>
+							<option value="3">tsp</option>
+							<option value="4">oz</option>
+							<option value="5">finger</option>
+							<option value="6"></option>
+						</select>
+						<input type="text" name="ingredients[]" />
+						<a href="#" class="remove">X</a>
+					</li>
+				</ul>
+				<a href="#" id="add-ingredient">Add ingredient</a>
+				<h4 id="Directionsh4">Directions:</h4>
+				<ol id="directions-list">
+					<li>
+						<input type="text" name="directions[]" />
+						<a href="#" class="remove">X</a>
+					</li>
+				</ol>
+				<a href="#" id="add-direction">Add direction</a><br /><br />
+				<input id="SubmitButton" type="submit" value="Save" /><input id="CancelButton" type="button" value="Cancel" onclick="location.href='./';" />
+			</fieldset>
+			</form>
+		<!--End AddDrink Form-->
+		</div>
+	</div>
+	<div id="Footer">
+		Totally valid HTML and CSS. We Swear.
+	</div>
+	</div> <!-- The TOP -->
+</body>
+</html>

@@ -1,0 +1,138 @@
+#AddDrinkArea{
+	height:410px;
+	width:98%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#AddDrinkFieldset{
+	border: 3px solid #3B0616;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#NameText{
+	border: 1px solid #3B0616;
+	/*-moz-border-radius: 5px;
+	border-radius: 5px;*/
+}
+/*
+#CategoryLabel{
+	color:#5D0502;
+}
+
+#category{
+	color:#5D0502;
+}
+*/
+#picture{
+	border: 1px solid #3B0616;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#Ingradientsh4{
+	color:#5D0502;
+}
+
+#ingredients-list{
+	color:#5D0502;
+}
+
+#MeasureSelect{
+	color:#5D0502;
+}
+
+#MeasureSelect option{
+	color:#5D0502;
+}
+
+.remove{
+	color:#5D0502;
+}
+
+#add-ingredient{
+	color:Black;
+}
+
+#Directionsh4{
+	color:#5D0502;
+}	
+
+#add-direction{
+	color:Black;
+}
+
+#DrinkNameAndPhoto{
+	height:20px;
+	width:100%;
+	margin-top:10px;
+}
+
+#DrinkNameAndPhotoLeft{
+	float:left;
+	width:30%;
+}
+
+#DrinkNameAndPhotoRightCenter{
+	float:right;
+	width:70%;
+}
+
+#DrinkNameCenter{
+	float:left;
+	width:40%;
+}
+
+#DrinkNameRight{
+	float:right;
+	width:60%;
+}
+
+#AddDrinkBanner{
+	width:100%;
+	height:10px;
+}
+
+#AddDrinkHeader{
+	height:100%;
+	width:100%;
+}
+
+#SubmitButton{
+background-color:#7D0A1C;
+	border:1px solid White;
+	height:25px;
+	width:60px;
+	color:white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left:2px;
+	margin-top:2px;
+	float:left;
+}
+
+#CancelButton{
+background-color:#7D0A1C;
+	border:1px solid White;
+	height:25px;
+	width:60px;
+	color:white;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left:2px;
+	margin-top:2px;
+	float:left;
+}
+
+#SubmitButton:hover{
+	background-color:white;
+	color:#7D0A1C;
+	border:1px solid #7D0A1C;
+}
+
+#CancelButton:hover{
+	background-color:white;
+	color:#7D0A1C;
+	border:1px solid #7D0A1C;
+}
