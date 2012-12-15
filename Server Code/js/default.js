@@ -2,7 +2,7 @@ $(function() { $("#LeftPanelMenu").menu();});
 
 $( document ).ready( function () {
 	
-	$( '#ingredients-list > li > a#remove, #directions-list > li > a#remove' ).click( function ( e ) {
+	$( '#ingredients-list > li > a.remove, #directions-list > li > a.remove' ).click( function ( e ) {
 		e.preventDefault();
 		if ( $( this ).parent().siblings().length > 0 ) {
 			$( this ).parent().remove();

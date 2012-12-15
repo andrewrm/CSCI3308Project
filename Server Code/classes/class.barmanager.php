@@ -17,7 +17,8 @@ class CF_BarManager {
 		
 		$query	=	'
 			SELECT		id, name, location
-			FROM		' . CF_BARS_TABLE
+			FROM		' . CF_BARS_TABLE . '
+			ORDER BY 	id'
 		;
 		$barquery = $dbo->query( $query );
 		
@@ -39,7 +40,8 @@ class CF_BarManager {
 		$query	=	'
 			SELECT		tagged_bars
 			FROM		' . CF_COCKTAILS_TABLE . '
-			WHERE		id = ' . $dbo->sqlsafe( $recipe_id )
+			WHERE		id = ' . $dbo->sqlsafe( $recipe_id ) . '
+			ORDER BY	id'
 		;
 		$cocktailquery = $dbo->query( $query );
 		

@@ -35,39 +35,8 @@ if ( isset( $_GET['id'] ) && !empty( $_GET['id'] ) && is_numeric( $_GET['id'] ) 
 </head>
 <body class="PageBody">
 	<div id="TheTop">
-	<div id="LeftPanel">
-		<div id="LeftPanelList">
-			<ul id="LeftPanelMenu" class="ClassyFontClass">
-				<li>
-					<a href="#">Drink Categories</a>
-					<ul class="LeftPanelSubMenu ClassyFontClass">
-						<li><div class="liText">Beer     </div></li>
-						<li><div class="liText">Wine</div></li>
-						<li><div class="liText">Spirits</div></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Add a Drink</a>
-				</li>
-				<li>
-					<a href="#">Write a Review</a>
-				</li>
-				<li>
-					<a href="#">Random Drink</a>
-				</li>
-				<li>
-					<a href="#">Add Bar</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div id="LoginBox">
-		<div id="LoginLogo">
-			<img src="img/InebLogo1.jpg" alt="Logo" id="SiteLogo"/>
-		</div>
-		<div id="LoginSearchDiv">
-		</div>
-		<em id="LoginQuote">"Four shots and seven beers ago..."</em>
+	<?php include_once './includes/left_panel.inc.php'; ?>
+	<?php include_once './includes/header.inc.php'; ?>
 			<div id="DrinkInformation">
 			<div id="DrinkInformationTop">
 			<div id="DrinkInformationLeftColumn">
@@ -75,7 +44,8 @@ if ( isset( $_GET['id'] ) && !empty( $_GET['id'] ) && is_numeric( $_GET['id'] ) 
 			</div>
 			<div id="DrinkInformationRightColumn">
 				<div id="DrinkInformationRightColumnL1">
-					<h3 class="DrinkTitle">Ingredients:</h3>
+					<h2><?php echo $cocktail->getName(); ?></h2>
+					<h3>Ingredients:</h3>
 					<div id="IngredientsList">
 						<ul>
 <?php
@@ -104,12 +74,12 @@ foreach ( $directions as $direction ) {
 					<div id="NewDrinkRating">
 						<div id="NewDrinkRatingStars">
 							<ul class="star-rating small-star">
-								<li class="current-rating" style="width:50%">Currently 2.5/5 Stars.</li>
-								<li><a href="#" title="1 star out of 5" class="one-star">1</a></li>
-								<li><a href="#" title="2 stars out of 5" class="two-stars">2</a></li>
-								<li><a href="#" title="3 stars out of 5" class="three-stars">3</a></li>
-								<li><a href="#" title="4 stars out of 5" class="four-stars">4</a></li>
-								<li><a href="#" title="5 stars out of 5" class="five-stars">5</a></li>
+								<li class="current-rating" style="width: <?php echo round( $rating_info[0] / 5 * 100 ); ?>%">Currently 2.5/5 Stars.</li>
+								<li><a href="./rate?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>&amp;rating=1" title="1 star out of 5" class="one-star">1</a></li>
+								<li><a href="./rate?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>&amp;rating=2" title="2 stars out of 5" class="two-stars">2</a></li>
+								<li><a href="./rate?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>&amp;rating=3" title="3 stars out of 5" class="three-stars">3</a></li>
+								<li><a href="./rate?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>&amp;rating=4" title="4 stars out of 5" class="four-stars">4</a></li>
+								<li><a href="./rate?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>&amp;rating=5" title="5 stars out of 5" class="five-stars">5</a></li>
 							</ul>
 						</div>
 					</div>
@@ -120,14 +90,9 @@ foreach ( $directions as $direction ) {
 		</div>
 		<div id="DrinkInformationBottom">
 			<div id="DrinkButtonRow">
-				<div id="DrinkLocationsButton1">Locations</div>
-				<div id="DrinkLocationsButton2">Tag a Location</div>
+				<a href="./map?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>" id="DrinkLocationsButton1">Find this Drink</a>
+				<a href="./tag?id=<?php echo htmlentities( $_GET['id'], ENT_QUOTES ); ?>" id="DrinkLocationsButton2">Tag a Bar</a>
 			</div>
 		</div>
 	</div>
-	</div> <!-- The TOP -->
-	<div id="Footer">
-		Totally valid HTML and CSS. We Swear.
-	</div>
-</body>
-</html>
+	<?php include_once './includes/footer.inc.php'; ?>

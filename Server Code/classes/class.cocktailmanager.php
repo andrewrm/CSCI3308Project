@@ -12,13 +12,21 @@ class CF_CocktailManager {
 	}
 	
 	// Populates cocktails
-	public function populate() {
+	public function populate( $category = null ) {
 		$dbo =& CF_Factory::getDBO();
 		
-		$query	=	'
-			SELECT		*
-			FROM		' . CF_COCKTAILS_TABLE
-		;
+		if ( !is_null( $category ) && is_numeric( $category ) ) {
+			$query	=	'
+				SELECT		*
+				FROM		' . CF_COCKTAILS_TABLE . '
+				WHERE		category = ' . $dbo->sqlsafe( $category )
+			;
+		} else {
+			$query	=	'
+				SELECT		*
+				FROM		' . CF_COCKTAILS_TABLE
+			;
+		}
 		$cocktailquery = $dbo->query( $query );
 		
 		// If an error occurred, append to the error log and return with an error code
